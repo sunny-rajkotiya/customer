@@ -1,0 +1,32 @@
+version: "3"
+services:
+  mongo: 
+    container_name: "customermongo"
+    image: mongo
+    environment:
+      - MONGO_INITDB_DATABASE=shelldb
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - customermongo:/data/db
+    ports:
+      - '27017-27019:27017-27019'
+    networks:
+      customermongo:
+        aliases:
+          - customermongo
+  app:
+    container_name: "customerapp"
+    build: .
+    volumes:
+      - .:/home/node/app
+    ports:
+      - "3001:3000"
+    command: ["sh loaddependencies.sh & tail -f /dev/null"]
+    networks:
+      customermongo:
+
+volumes:
+  customermongo:
+networks:
+  customermongo:

@@ -1,0 +1,5 @@
+1. npx create-react-app app --typescript
+2. sudo -i
+echo 1048576 > /proc/sys/fs/inotify/max_user_watches
+exit
+3. 

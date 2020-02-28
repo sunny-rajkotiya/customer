@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "alwaysStrict": true,
+        "typeRoots": [
+            "src/types"
+        ],
+        "module": "commonjs",
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": false,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "target": "ES2017",
+        "noImplicitAny": true,
+        "outDir": "dist",
+        "sourceMap": true,
+        "strict": true,
+        "declaration": true,
+        "inlineSources": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}
