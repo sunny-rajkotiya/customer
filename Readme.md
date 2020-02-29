@@ -49,7 +49,7 @@ API doc link - https://customerapp.docs.stoplight.io
 
 - CustomerCollection
 
-```json
+```
 {
     _id: primarykey
     employeeID: string,
