@@ -66,3 +66,9 @@ API doc link - https://customerapp.docs.stoplight.io
     ]
 }
 ```
+
+## Screenshots
+
+1. Customer Address 
+![Customers List](screenshots/Customers-list.png)
+![Customer Address](screenshots/Customer-addresses.png)
