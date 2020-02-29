@@ -48,20 +48,21 @@ API doc link - https://customerapp.docs.stoplight.io
 ## Database Design
 
 - CustomerCollection
-    ```
+
+```json
+{
+    _id: primarykey
+    employeeID: string,
+    name: string,
+    age: number,
+    addresses: [
         {
-            _id: primarykey
-            employeeID: string,
-            name: string,
-            age: number,
-            addresses: [
-                {
-                    address1: string,
-                    address2: string,
-                    city: string,
-                    state: string,
-                    country: string
-                }
-            ]
+            address1: string,
+            address2: string,
+            city: string,
+            state: string,
+            country: string
         }
-    ```
+    ]
+}
+```
