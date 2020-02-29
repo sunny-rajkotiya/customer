@@ -19,10 +19,11 @@ services:
     container_name: "customerapp"
     build: .
     volumes:
-      - .:/home/node/app
+      - .:/home/node/customerapp
     ports:
-      - "3001:3000"
-    command: ["sh loaddependencies.sh & tail -f /dev/null"]
+      - "3001:3001"
+      - "3000:3000"
+    command: ["sh loaddependencies.sh && tail -f /dev/null"]
     networks:
       customermongo:
 
